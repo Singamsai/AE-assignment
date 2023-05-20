@@ -18,7 +18,7 @@ export default function Posts() {
 
   useEffect(() => {
     fetch(
-      `http://jsonplaceholder.typicode.com/${fetchval}?_start=${m}&_end=${n}`
+      `https://jsonplaceholder.typicode.com/${fetchval}?_start=${m}&_end=${n}`
     )
       .then((res) => res.json())
       .then((fetchdata) => {
