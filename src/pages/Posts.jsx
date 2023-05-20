@@ -61,8 +61,8 @@ export default function Posts() {
     setSorts(!sorts);
     if (sorts) {
       const newlist = postsdata.sort((a, b) => {
-        let fa = a.body.toLowerCase(),
-          fb = b.body.toLowerCase();
+        let fa = a[fetchval === "users" ? "email" : "body"].toLowerCase(),
+          fb = b[fetchval === "users" ? "email" : "body"].toLowerCase();
         if (fa < fb) {
           return -1;
         }
@@ -128,6 +128,7 @@ export default function Posts() {
           <Link to="/posts/users">
             <button
               onClick={() => {
+                onClick(0, 10)
                 setFetchval("users");
                 setM(0);
                 setN(10);
@@ -139,6 +140,7 @@ export default function Posts() {
           <Link to="/posts">
             <button
               onClick={() => {
+                onClick(0, 10)
                 setFetchval("posts");
               }}
             >
@@ -148,6 +150,7 @@ export default function Posts() {
           <Link to="/posts/comments">
             <button
               onClick={() => {
+                onClick(0, 10)
                 setFetchval("comments");
               }}
             >
