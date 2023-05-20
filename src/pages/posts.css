@@ -36,6 +36,9 @@
   font-weight: 600;
   border-radius: 5px;
 }
+.pages button:active{
+  background-color: green;
+}
 .inputbox {
   width: 400px;
   display: flex;
@@ -81,6 +84,8 @@
   .header {
     margin: 2rem 0;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
   }
   .header_inputbox {
@@ -111,6 +116,7 @@
     font-size: 0.8rem;
   }
   .posts ul {
+    padding-bottom:2rem;
     margin: 0 2rem;
     gap: 0.6rem;
     font-size: 0.8rem;
