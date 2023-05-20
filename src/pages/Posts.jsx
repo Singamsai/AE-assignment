@@ -116,7 +116,7 @@ export default function Posts() {
                   option === "name" ||
                   option === "username"
                 )
-                  search(inp, option);
+                  search(inp.toLowerCase(), option);
                 if (option === "id") searchwithId(inp);
               }}
             >
