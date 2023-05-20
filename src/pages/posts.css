@@ -1,0 +1,118 @@
+.posts {
+  height: 100vh;
+  width: 100vw;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.header_inputbox {
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  gap: 1rem;
+}
+.header select {
+  font-size: 1rem;
+  padding: 0.3rem;
+  text-align: center;
+}
+.pages {
+  margin-right: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.pages button {
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  outline: none;
+  background-color: rgb(156, 164, 236);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.inputbox {
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+.inputbox input {
+  width: 80%;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+.inputbox button {
+  font-size: 1rem;
+  padding: 0.3rem 0.8rem;
+  background-color: #ee4e34;
+  border: none;
+  outline: none;
+  color: white;
+  height: 2rem;
+  border-radius: 0 5px 5px 0;
+}
+.table_data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.posts ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin: 0.5rem 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: rgb(5, 102, 141);
+  text-decoration: underline;
+}
+.posts ul li:hover {
+  font-weight: 600;
+  color: blue;
+}
+
+@media (max-width: 500px) {
+  .header {
+    margin: 2rem 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .header_inputbox {
+    margin: 0;
+  }
+  .pages {
+    margin: 0;
+  }
+  .inputbox {
+    width: 230px;
+  }
+  .inputbox input {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+  .inputbox button {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+  .table_data {
+    display: block;
+    margin: 0;
+  }
+  .table_data table th {
+    font-size: 1rem;
+  }
+  .table_data table td {
+    font-size: 0.8rem;
+  }
+  .posts ul {
+    margin: 0 2rem;
+    gap: 0.6rem;
+    font-size: 0.8rem;
+  }
+}
