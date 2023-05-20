@@ -160,12 +160,12 @@ export default function Posts() {
         </div>
       </div>
       <div className="table_data">
-        <Table
+        {postsdata.length>0?<Table
           data={searchData.length > 0 ? searchData : postsdata}
           page={fetchval}
           sort={sort}
           sortbody={sortbody}
-        ></Table>
+        ></Table>:<div><h2>API is not working </h2><br/><p>please try again later...</p></div>}
       </div>
       <ul style={{ display: fetchval === "users" ? "none" : "flex" }}>
         <li
